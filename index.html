@@ -122,15 +122,12 @@
 
     <!-- ABOUT_US -->
     <div id="about_us_id" class="about_us_main">
-      <img
-        src="./images/ACCA.png"
-        alt="Our perfectly designed logo"
-      />
+      <img src="./images/ACCA.png" alt="Our perfectly designed logo" />
       <h2>About us</h2>
       <p>
         ACCA was created with the single purpouse of just making money, selling
-        overexpensive junk! To underline how we absolutely don't care
-        for our customers, we will put some "Lorem" text in the next paragraph!
+        overexpensive junk! To underline how we absolutely don't care for our
+        customers, we will put some "Lorem" text in the next paragraph!
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
@@ -170,5 +167,45 @@
         </li>
       </ul>
     </footer>
+
+    <!-- POPUPWINDOW -->
+    <div class="popup">
+      <button id="close">X</button>
+      <h2>
+        Like every other respected company, we must start with this useless,
+        annoing pop-up window! To underline how meaningless actually this window
+        is, we will just put some "Lorem" text in the next paragraphs! Also,
+        both "Let's go" and "X" buttons are doing exatly the same thing, just
+        closing this window!
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        possimus aut suscipit autem ad quis explicabo repellat nemo sit
+        recusandae expedita quas, harum alias, fuga deleniti odio magnam iste
+        esse!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        distinctio fugiat alias iure qui, commodi minima magni ullam aliquam
+        dignissimos?
+      </p>
+      <a href="#" id="close_link">Let's Go</a>
+    </div>
+    <!--ScriptPopUp-->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function open(event) {
+          document.querySelector(".popup").style.display = "block";
+        }, 1000);
+      });
+      document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      });
+      document
+        .querySelector("#close_link")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "none";
+        });
+    </script>
   </body>
 </html>

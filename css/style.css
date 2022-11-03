@@ -137,8 +137,8 @@ main h2:hover {
   box-shadow: 2px 2px 10px 3px #86868656;
   transition: 0.6s;
 }
-.middle:hover{
-  box-shadow:0 0 10px 3px white;
+.middle:hover {
+  box-shadow: 0 0 10px 3px white;
 }
 .navigation {
   position: absolute;
@@ -298,4 +298,67 @@ input[name="r"] {
   color: white;
   transform: rotate(360deg);
   text-shadow: 0 0 10px white;
+}
+
+/* POPUPWINDOW */
+.popup {
+  background-color: #c0c4c3;
+  min-width: 1080px;
+  min-height: 720px;
+  padding: 30px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border: 2px solid #1a1423;
+  border-radius: 12px;
+  display: none;
+  font-size: 28px;
+  text-align: center;
+}
+.popup button {
+  display: block;
+  margin: 20px 20px 20px auto;
+  background-color: transparent;
+  color: #1a1423;
+  border: 2px solid #32017c;
+  border-radius: 50%;
+  font-size: 33px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 3px #86868656;
+}
+.popup h2 {
+  font-weight: bold;
+}
+.popup p {
+  padding: 30px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+.popup a {
+  display: block;
+  width: 150px;
+  position: relative;
+  top: 50px;
+  margin: auto;
+  color: #c0c4c3;
+  text-decoration: none;
+  padding: 5px 0;
+  background-color: #1a1423;
+  border-radius: 12px 5px 12px 5px;
+  box-shadow: 2px 2px 10px 3px #86868656;
+  border: 2px solid whitesmoke;
+}
+
+.popup button:hover,
+.popup a:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 6px 4px whitesmoke;
+  color: whitesmoke;
+  background-color: #32017c;
+  text-shadow: 0 0 5px white;
+}
+.popup button:hover {
+  transform: rotate(360deg);
 }
